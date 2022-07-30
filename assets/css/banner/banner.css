@@ -9,7 +9,6 @@
 .banner__h2{
     color: #fdfdfd;
     font-family: Pacifico, cursive;
-    font-size: 5rem;
     left: 50%;
     position: absolute;
     text-align: center;
@@ -17,4 +16,28 @@
     top: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
+}
+
+@media screen and (min-width: 0) {
+    .banner__h2 {
+        font-size: 3rem;
+        
+    }
+}
+@media screen and (min-width: 768px) {
+    .banner__h2 {
+        font-size: 5rem;
+    }
+}
+    
+@media screen and (min-width: 0) {
+    .logo {
+        display: none;
+        
+    }
+}
+@media screen and (min-width: 768px) {
+    .logo {
+        display: block;
+    }
 }

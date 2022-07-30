@@ -1,10 +1,29 @@
 .pessoas {
     display: flex;
-    flex-direction: row;
+    
     justify-content: space-around;
     padding-bottom: 3rem;
     padding-top: 3rem;
 }
+
+        @media screen and (min-width: 0) {
+            .pessoas {
+                flex-direction: column;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            .pessoas {
+                flex-direction: row;
+            }
+        }
+
+        @media screen and (min-width: 0) {
+            .pessoa {
+                margin-bottom: 3rem;
+            }
+        }
+
 
 .pessoa__nome {
     color: #8d0606;

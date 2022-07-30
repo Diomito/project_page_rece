@@ -3,7 +3,26 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    padding: 5rem 0 0 5rem;
+    
+    justify-content: center;
+}
+
+        @media screen and (min-width: 0) {
+            .receitas {
+                padding: 5rem 1rem;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            .receitas {
+                padding: 5rem 2.5rem;
+            }
+        }
+
+        @media screen and (min-width: 990px) {
+            .receitas {
+                padding: 5rem 5rem;
+            }
 }
 
 .receita {
@@ -12,9 +31,30 @@
     flex-direction: column;
     margin-bottom: 5rem;
     margin-right: 5rem;
-    padding: 1rem;
-	width: 25%;
+    
 }
+        @media screen and (min-width: 0) {
+            .receita{
+                margin-right: 1rem;
+                width: 100%;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            .receita {
+                margin-right: 2.5rem;
+                width: calc(33.3% - 2.5rem);
+            }
+        }
+
+        @media screen and (min-width: 990px) {
+            .receita {
+                padding: 1rem;
+                width: 25%;
+            }
+    }
+
+
 
 .receita__titulo {
     font-size: 1.187rem;

@@ -1,12 +1,33 @@
 .sobre__h2{
     color: #8d0606;
-    font-size: 3rem;
     font-family: Pacifico, cursive;
     text-align: center;
 }
 .sobre__p{
     color: #595959;
-    font-size: 1.5rem;
     font-weight: 100;
     text-align: center;
+}
+
+@media screen and (min-width: 0) {
+    .sobre__h2 {
+        font-size: 1.75rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    .sobre__h2 {
+        font-size: 3rem;
+    }
+}
+
+
+@media screen and (min-width: 0) {
+    .sobre__p {
+        font-size: 1rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    .sobre__p {
+        font-size: 1.5rem;
+    }
 }
